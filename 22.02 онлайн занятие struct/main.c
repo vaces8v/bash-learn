@@ -169,10 +169,10 @@ int main() {
 
             case 3:
                 printf("Введите имя для поиска: ");
-                if (fgets(search_name, MAX_NAME_LEN, stdin) != NULL) {
-                    search_name[strcspn(search_name, "\n")] = 0;
-                    find_by_name(ar, count, search_name);
-                }
+                // if (fgets(search_name, MAX_NAME_LEN, stdin) != NULL) {
+                //     search_name[strcspn(search_name, "\n")] = 0;
+                //     find_by_name(ar, count, search_name);
+                // }
                 break;
 
             case 4:
@@ -181,8 +181,8 @@ int main() {
                 printf("Автор: ...\n");
                 printf("Возможности:\n");
                 printf("- Добавление событий\n");
-                printf("- Поиск по имени\n");
-                printf("- Сохранение/загрузка данных\n");
+                // printf("- Поиск по имени\n");
+                // printf("- Сохранение/загрузка данных\n");
                 printf("- Валидация введенных данных\n");
                 break;
 
