@@ -26,7 +26,7 @@ int main() {
         printf("%s\n", arr[i]);
     }
 
-    sortStringsAlphabetically(arr, n);
+    sortStrAlph(arr, n);
 
     printf("\nОтсортированный массив строк по алфавиту:\n");
     for (int i = 0; i < n; i++) {
@@ -36,8 +36,8 @@ int main() {
 	return 0;
 }
 
-void sortStrByLen(char arr[][100], int n) {
-    char temp[100];
+void sortStrByLen(char arr[][MAX_LINE], int n) {
+    char temp[MAX_LINE];
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
             if (strlen(arr[j]) > strlen(arr[j + 1])) {
@@ -49,8 +49,8 @@ void sortStrByLen(char arr[][100], int n) {
     }
 }
 
-void sortStrAlph(char arr[][100], int n) {
-    char temp[100]; 
+void sortStrAlph(char arr[][MAX_LINE], int n) {
+    char temp[MAX_LINE]; 
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
             if (strcmp(arr[j], arr[j + 1]) > 0) {
